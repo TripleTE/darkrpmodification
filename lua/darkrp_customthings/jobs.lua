@@ -15,21 +15,21 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
-
+Police_Officer
 
 
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
-GAMEMODE.DefaultTeam = TEAM_CITIZEN
+GAMEMODE.DefaultTeam = TEAM_POLICEOFFICER
 --[[---------------------------------------------------------------------------
 Define which teams belong to civil protection
 Civil protection can set warrants, make people wanted and do some other police related things
 ---------------------------------------------------------------------------]]
 GAMEMODE.CivilProtection = {
     [TEAM_POLICE] = true,
-    [TEAM_CHIEF] = true,
-    [TEAM_MAYOR] = true,
+    [TEAM_CHIEF] = False,
+    [TEAM_MAYOR] = false,
 }
 --[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
